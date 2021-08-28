@@ -7,6 +7,7 @@ Docker Compose services:
 - Node.js
 - Golang
 - Nginx
+- Cloud9
 - phpMyAdmin
 
 Addition Processes:
@@ -49,7 +50,7 @@ $ docker-compose logs -f
 $ docker-compose down --rmi=all
 ```
 
-### Dev user for PHP service
+### Dev user for PHP and Cloud9 services
 ```bash
 $ su dev
 ```
