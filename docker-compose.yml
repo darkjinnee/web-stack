@@ -192,6 +192,31 @@ services:
       - nginx
       - php
 
+  cloud9:
+    build:
+      context: .
+      dockerfile: ./docker/services/cloud9/Dockerfile
+    image: ${DOCKER_PROJECT_NAME}_cloud9
+    container_name: ${DOCKER_PROJECT_NAME}_cloud9
+    networks:
+      - net
+    volumes:
+      - ${DOCKER_PROJECT_ROOT}:${DOCKER_PROJECT_PATCH}
+    ports:
+      - '${DOCKER_CLOUD9_PORT:-8989}:8080'
+    environment:
+      - C9_WORKSPACE=${DOCKER_PROJECT_PATCH}
+      - C9_EXTRA=${DOCKER_CLOUD9_C9_EXTRA}
+    depends_on:
+      - phpmyadmin
+      - meilisearch
+      - golang
+      - nodejs
+      - redis
+      - mysql
+      - nginx
+      - php
+
 networks:
   net:
     driver: bridge

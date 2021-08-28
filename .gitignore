@@ -1,5 +1,6 @@
 .env
 .idea/
+.c9/
 /public/access-nginx.log
 /public/error-nginx.log
 /public/worker.log
