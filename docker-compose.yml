@@ -62,7 +62,7 @@ services:
   php:
     build:
       context: .
-      dockerfile: ./docker/services/php/Dockerfile
+      dockerfile: ./docker/services/php/${DOCKER_PHP_VERSION}/Dockerfile
     image: ${DOCKER_PROJECT_NAME}_php
     container_name: ${DOCKER_PROJECT_NAME}_php
     working_dir: ${DOCKER_PROJECT_PATCH}
@@ -72,10 +72,10 @@ services:
     - '9001:9001'
     volumes:
       - ${DOCKER_PROJECT_ROOT}:${DOCKER_PROJECT_PATCH}
-      - ./docker/services/php/conf.d/custom.ini:/usr/local/etc/php/conf.d/custom.ini
-      - ./docker/services/php/conf.d/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
-      - ./docker/services/php/conf.d/supervisord.ini:/etc/supervisor.d/supervisord.ini
-#      - ./docker/services/php/conf.d/worker.ini:/etc/supervisor.d/worker.ini
+      - ./docker/services/php/${DOCKER_PHP_VERSION}/conf.d/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./docker/services/php/${DOCKER_PHP_VERSION}/conf.d/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+      - ./docker/services/php/${DOCKER_PHP_VERSION}/conf.d/supervisord.ini:/etc/supervisor.d/supervisord.ini
+#      - ./docker/services/php/${DOCKER_PHP_VERSION}/conf.d/worker.ini:/etc/supervisor.d/worker.ini
       - ./docker/scripts/php.sh:/scripts/php.sh
     environment:
       - PROJECT_PATCH=${DOCKER_PROJECT_PATCH}
