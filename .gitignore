@@ -4,3 +4,5 @@
 /public/access-nginx.log
 /public/error-nginx.log
 /public/worker.log
+
+docker/services/php/conf.d/
