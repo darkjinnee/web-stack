@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/darkjinnee/web-stack/compare/v2.0.0...v2.1.0) (2021-09-12)
+
+
+### Features
+
+* **docker:** add php version service ([78c441e](https://github.com/darkjinnee/web-stack/commit/78c441e114630ecb695d9a9c044798a5e75eaac3))
+
 ## [2.0.0](https://github.com/darkjinnee/web-stack/compare/v1.1.1...v2.0.0) (2021-08-30)
 
 
