@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/darkjinnee/web-stack/compare/v2.1.0...v2.2.0) (2021-12-09)
+
+
+### Features
+
+* add .env parameter to define database name ([6c0d063](https://github.com/darkjinnee/web-stack/commit/6c0d0636997bc8bce53ecbb51ad301e8bd8073fa))
+
 ## [2.1.0](https://github.com/darkjinnee/web-stack/compare/v2.0.0...v2.1.0) (2021-09-12)
 
 
