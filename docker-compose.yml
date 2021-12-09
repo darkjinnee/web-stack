@@ -51,7 +51,7 @@ services:
       # - ./docker/services/mysql/var/backups/sql/dump.sql:/docker-entrypoint-initdb.d/dump.sql
       # - ./docker/services/mysql/var/lib/mysql:/var/lib/mysql
     environment:
-      - MYSQL_DATABASE=${DOCKER_PROJECT_NAME}
+      - MYSQL_DATABASE=${DOCKER_MYSQL_DATABASE}
       - MYSQL_ROOT_PASSWORD=${DOCKER_MYSQL_ROOT_PASSWORD}
       - MYSQL_USER=${DOCKER_MYSQL_USER}
       - MYSQL_PASSWORD=${DOCKER_MYSQL_PASSWORD}
