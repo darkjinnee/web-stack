@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/darkjinnee/web-stack/compare/v2.2.0...v2.2.1) (2021-12-14)
+
+
+### Bug Fixes
+
+* update xdebug config ([76c2355](https://github.com/darkjinnee/web-stack/commit/76c2355e0e7c009439987a1cfd7ffe021f9ef4c6))
+
 ## [2.2.0](https://github.com/darkjinnee/web-stack/compare/v2.1.0...v2.2.0) (2021-12-09)
 
 
