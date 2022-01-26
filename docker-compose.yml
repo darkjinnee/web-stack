@@ -181,8 +181,9 @@ services:
       - '${DOCKER_PHPMYADMIN_PORT:-8008}:80'
     environment:
       - PMA_ARBITRARY=1
-      - PMA_HOST=${DOCKER_PROJECT_NAME}_mysql
       - PMA_ABSOLUTE_URI=${DOCKER_PHPMYADMIN_PMA_ABSOLUTE_URI}
+      - PMA_HOST=${DOCKER_PROJECT_NAME}_mysql
+      - PMA_PORT=3306
     depends_on:
       - meilisearch
       - golang
