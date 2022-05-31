@@ -9,6 +9,7 @@ Docker Compose services:
 - Nginx
 - Cloud9
 - phpMyAdmin
+- TOR
 
 Addition Processes:
 - Xdebug

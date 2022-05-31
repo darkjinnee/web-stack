@@ -218,6 +218,25 @@ services:
       - nginx
       - php
 
+  tor:
+    build:
+      context: .
+      dockerfile: ./docker/services/tor/Dockerfile
+    image: ${DOCKER_PROJECT_NAME}_tor
+    container_name: ${DOCKER_PROJECT_NAME}_tor
+    networks:
+      - net
+    depends_on:
+      - phpmyadmin
+      - meilisearch
+      - golang
+      - nodejs
+      - cloud9
+      - redis
+      - mysql
+      - nginx
+      - php
+
 networks:
   net:
     driver: bridge
