@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/darkjinnee/web-stack/compare/v2.2.2...v2.3.0) (2022-05-31)
+
+
+### Features
+
+* add tor services ([3a7c6ab](https://github.com/darkjinnee/web-stack/commit/3a7c6ab6e45ff724a4542e522dcc984597f0069c))
+
 ### [2.2.2](https://github.com/darkjinnee/web-stack/compare/v2.2.1...v2.2.2) (2022-01-26)
 
 
