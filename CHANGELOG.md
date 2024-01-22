@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/darkjinnee/web-stack/compare/v2.3.0...v2.4.0) (2024-01-22)
+
+
+### Features
+
+* add multiple hosts ([f75e478](https://github.com/darkjinnee/web-stack/commit/f75e47814e14ab85937a132355f574cdd2fb6f3f))
+
 ## [2.3.0](https://github.com/darkjinnee/web-stack/compare/v2.2.2...v2.3.0) (2022-05-31)
 
 
