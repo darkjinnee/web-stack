@@ -3,7 +3,7 @@
 server {
 
     listen 80 default_server;
-    server_name ${SERVER_NAME} www.${SERVER_NAME};
+    server_name ${SERVER_NAME} *.${SERVER_NAME} www.${SERVER_NAME};
 
     charset utf-8;
 

@@ -157,7 +157,7 @@ services:
       - CONFIG=${DOCKER_NGINX_CONFIG}
       - PHP_HOST=${DOCKER_PROJECT_NAME}_php
       - NODEJS_HOST=${DOCKER_PROJECT_NAME}_nodejs
-      - VIRTUAL_HOST=${DOCKER_PROJECT_DOMAIN}
+      - VIRTUAL_HOST=${DOCKER_PROJECT_DOMAIN},*.${DOCKER_PROJECT_DOMAIN}
     command: /scripts/nginx.sh
     depends_on:
       - meilisearch
